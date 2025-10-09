@@ -47,6 +47,10 @@ a {
   position: relative;
   display: inline;
 }
+a:hover {
+  /* Needed otherwise the rainbows are underneath other <a>s */
+  z-index: 1000;
+}
 a:hover::before,
 a:hover::after {
   content: "";
